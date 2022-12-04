@@ -1,0 +1,81 @@
+.advantages {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 325px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -44px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 157px;
+    height: 320px;
+    background-image: url("../../img/iphone-pink.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    z-index: 10;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1172px;
+    height: 1070px;
+    bottom: 0;
+    left:0;
+    background-image: url("../../img/grey-background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+}
+
+.advantages .container {
+  position: relative;
+  z-index: 5;
+}
+
+.advantages__slogan {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 22px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 118px;
+  }
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  margin-bottom: 30px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black;
+  text-align: center;
+}
+
+.advantages__description {
+  text-align: center;
+}
+
+.advantages__item-img {
+  display: none;
+}

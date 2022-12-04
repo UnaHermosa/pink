@@ -1,0 +1,15 @@
+.checkbox {
+  @include list-reset;
+}
+
+.checkbox__item:not(:last-child) {
+  margin-bottom: 47px;
+}
+
+.checkbox__label {
+  display: block;
+  padding-left: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}

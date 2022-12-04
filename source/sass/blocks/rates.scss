@@ -1,0 +1,96 @@
+.rates {
+  position: relative;
+  padding-top: 81px;
+  padding-bottom: 390px;
+  background-color: $light-gray;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 544px;
+    left: 0;
+    bottom: 81px;
+  }
+}
+
+.rates .container {
+  position: relative;
+  z-index: 10;
+}
+
+.rates__list {
+  position: absolute;
+  @include list-reset;
+  display: flex;
+  flex-wrap: nowrap;
+  content: "";
+  width: 100%;
+  height: auto;
+  top: 81px;
+  left: -260px;
+}
+
+.rates__item {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.rates__header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 35px;
+  text-align: center;
+  background-color: $basic-blue;
+  font-size: 16px;
+  line-height: 30px;
+  color: $basic-white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-left: 2px solid $light-gray;
+
+  &--hit::before {
+    position: absolute;
+    content: "";
+    width: 61px;
+    height: 61px;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/hit-ribbon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.rates__cost {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.rates__description {
+  margin: 0;
+  padding: 21px 20px 22px;
+  line-height: 30px;
+  background-color: $basic-white;
+  text-transform: uppercase;
+  border: 1px solid $gray;
+
+  &:last-of-type {
+    border-bottom-width: 2px;
+  }
+}
+
+.rates__toggler {
+  display: flex;
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 6px;
+  bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+}

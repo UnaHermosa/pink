@@ -1,0 +1,26 @@
+.page-header {
+  position: relative;
+  padding-top: 23px;
+  background-color: $basic-blue;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  margin-bottom: 23px;
+}
+
+.page-header__toggler {
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  background-image: url("../../img/close-menu-btn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  border: none;
+}

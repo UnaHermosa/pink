@@ -1,0 +1,42 @@
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -230px;
+  margin-bottom: -230px;
+  width: 460px;
+  background-color: $basic-white;
+  box-shadow: 0 7px 15px 0 $gray-shadow;
+  text-align: center;
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 37px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $black;
+}
+
+.popup__notice {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popup__wrapper {
+  padding: 49px 82px 0;
+}
+
+.popup__button-wrapper {
+  padding: 0 82px 54px;
+
+  &--succsess {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-color: $light-gray;
+  }
+}

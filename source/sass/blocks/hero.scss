@@ -1,0 +1,33 @@
+.hero {
+  position: relative;
+  padding-top: 32px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 462px;
+    background-image: url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    z-index: -1;
+  }
+}
+
+.hero__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: $basic-white;
+  text-align: center;
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+}

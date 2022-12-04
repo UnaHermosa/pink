@@ -1,0 +1,15 @@
+.radiobutton {
+  @include list-reset;
+}
+
+.radiobutton__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.radiobutton__label {
+  display: block;
+  padding-left: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}

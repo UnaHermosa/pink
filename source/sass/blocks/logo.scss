@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+
+  &:hover path {
+    fill: $red;
+  }
+
+  &:active path {
+    fill: $basic-white-30;
+  }
+}

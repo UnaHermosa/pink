@@ -1,0 +1,30 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.reviews__list {
+  @include list-reset;
+  margin-bottom: 44px;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: space-between;
+  width: 56px;
+  margin: 0 auto;
+}
+
+.reviews__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: $basic-blue-30;
+  border: none;
+  border-radius: 50%;
+}
+
+.reviews__toggle--current {
+  background-color: transparent;
+  outline: 3px solid $basic-blue;
+}

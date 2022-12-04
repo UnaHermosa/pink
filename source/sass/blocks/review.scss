@@ -1,0 +1,33 @@
+.review__item {
+  display: none;
+}
+
+.review__item--current {
+  display: block;
+}
+
+.reviews__list blockquote {
+  margin: 0;
+}
+
+.review__author {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  text-align: center;
+}
+
+.review__about-author {
+  display: none;
+}
+
+.review__cite {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  text-align: center;
+}
